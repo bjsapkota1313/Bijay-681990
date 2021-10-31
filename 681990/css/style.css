@@ -1,0 +1,1037 @@
+@import url('https://fonts.google.com/specimen/Notable?query=Notable#standard-styles');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    word-spacing: 0.5px;
+    text-indent: 20px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+    line-height: normal;
+    word-spacing: 0.05em;
+    border: #00FFFF;
+    border-width: 20px;
+}
+
+/*Heading*/
+
+#main-header {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    padding-top: 0.125em;
+    border-style: double ;
+    border-bottom: solid;
+    border-color: rgb(5, 85, 105);
+    border-width: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background:#cfcfcf;
+}
+/*Navigation*/
+.menu li:hover{
+    box-shadow: 2px 2px 2px 2px rgba(18, 187, 243, 0.5);
+    background: rgb(135, 158, 222);
+}
+/* using text tranform*/
+.menu li{
+    text-transform: uppercase;
+}
+.activetab{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(18, 187, 243, 0.5);
+    background: rgb(135, 158, 222);
+}
+.logo {
+    width: 8%;
+}
+.logo-group {
+    text-align: center;
+}
+.heading1 
+ {
+    margin-top: 0.25em;
+    color:black;
+    text-indent: 0%;
+    font-family: 'Notable', sans-serif;
+}
+
+
+.logo-group .heading2 {
+  
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1em;
+    color: black;
+}
+
+/*for index page*/
+.flex {
+   display: flex;
+    background-color: #fff;
+    border: rgb(141, 196, 255) solid 2px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+/*flex articles*/
+#flex1{
+    order: 0;
+    background-color: rgb(122, 190, 179);
+}
+#flex2{
+    order: 2;
+    background-color: rgb(114, 175, 53);
+}
+#flex3{
+    order: 3;
+    background-color: rgb(116, 209, 22);
+}
+
+.flex-child {
+    flex-basis: 75%;
+    order:1;
+    flex-shrink: 1;
+}
+/*aside for index page*/
+.asideIndex {
+    order: 0;
+    color: rgb(22, 22, 20);
+    background-color: rgb(202, 201, 154);
+    padding: 1em;
+}
+
+.asideIndex li {
+    color: rgb(19, 17, 17);
+    padding: 1em;
+    margin-left: 1em;
+}
+
+section h3 {
+    text-align: left;
+}
+
+
+/* for Best destinationa  */
+
+#usinggrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: left;
+    padding: 0.25em;
+    gap: 10px;
+}
+
+#article1 {
+    grid-column: 2;
+    grid-row: 1/ span 6;
+    background-color: rgb(232, 241, 103);
+    text-indent: 50px;
+}
+
+#article2 {
+    background-color: rgb(92, 187, 69);
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    text-indent: 50px;
+
+}
+
+#article3 {
+   
+    background-color: rgb(109, 133, 199); 
+    grid-column: 3;
+    grid-row: 1/ span 3;
+    text-indent: 50px;
+}
+
+#article4 {
+    background-color: rgb(95, 180, 88); 
+    grid-column: 3;
+    grid-row: 4/ span 3;
+    text-indent: 50px;
+}
+
+#article5 {
+    background-color: rgb(59, 124, 155); 
+    grid-column: 1;
+    grid-row: 3/ span 5;
+    text-indent: 50px;
+}
+
+#article6 {
+    background-color: rgb(179, 64, 140); 
+    grid-column: 2/ span 2;
+    grid-row: 7;
+    text-indent: 50px;
+}
+/*aside for bestdestinations page*/
+.asideGroup {
+    display: grid;
+    background-color: #333;
+    border: rgb(88, 76, 76) solid 2px;
+    
+    grid-template-areas: 'product1Tag product2Tag product3Tag';
+    width: 100%;
+}
+.product1 {  
+    grid-area: product1Tag;
+}
+
+.product2 {
+    grid-area: product2Tag;
+}
+
+.product3 {
+    grid-area: product3Tag;
+}
+
+.asideGroup a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+/*smaling aside products interactive */
+img:hover{
+    box-shadow: 7px 7px 7px 7px rgba(18, 187, 243, 0.5);
+}
+.picture {
+    width: 30%;
+}
+aside ol + li {
+    color: #333;
+}
+aside img {
+    width: 50%;
+}
+section h2 {
+    color: #333;
+}
+.asideGroup h1 {
+    color: #fff;
+    padding: 0.25em;
+}
+
+/* Tickets page */
+.maintable{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+table{
+    display: table;
+    box-sizing: border-box;
+    border: rgb(48, 197, 78) ridge 2px;
+    text-indent: initial;
+    background-color: rgb(148, 165, 197);
+    border-collapse: collapse;
+}
+th, td{
+    border: rgb(141, 196, 255) solid 1px;
+    padding: 0.35em;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+tr{
+    display: table-row;
+}
+
+/* applying color to Table as indicated in assement Guide*/
+th{
+    font-weight: bold;
+    text-align: left;
+    background-color:#ff0;
+}
+td{
+    text-align: left;
+}
+tr:nth-child(n+1){
+    background-color:#FFF;
+}
+ tr:nth-child(2n){
+    background-color:#CFF;
+}
+/*Tickets article */
+.ticketart{
+    background: #FFFF00;
+    text-align: left;
+}
+figcaption{
+    color: #333;
+    font-weight: bold;
+}
+/* Tickets page aside product */
+.aside{
+    background-color:#a09999;   
+}
+
+.aside strong{
+    padding: 1em;
+}
+
+.aside .images{
+    justify-content: left;
+}
+
+.product1ticket{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+.product2ticket{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+.product3ticket{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+.aside .images{
+    width:50%;
+}
+.images:hover {
+    box-shadow: 7px 7px 7px 7px rgba(18, 187, 243, 0.5);
+}
+
+/* Contact Page */
+section form input[type="text"], section form input[type="email"] {
+    width: 95%;
+    padding: 0 0 0 3%;
+    border-radius: 0.3em;
+}
+#message{
+    height: 10em;
+   margin: 1em;
+   width: 250px;
+}
+/* Button Page */
+#button {
+    margin: 1em 1.9em;
+    float: right;
+    width: 50%;
+    background:rgb(48, 108, 197);
+    color: #fff;
+    border: 0;
+    border-radius: 0 0 0 3%;
+    font-size: 1.17em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form legend{
+   
+    width: 100%;
+    border: rgb(230, 109, 109) solid 1px;
+}
+
+form fieldset {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(79, 92, 153);
+}
+
+
+/* Cookies Statement for every website */
+.cookie {
+    background-color: #fa0;
+    opacity: 50%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    z-index: 9999;
+}
+/* for footer for every website */
+.footer{
+    font-size: 95%;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 3em;
+    float: left;
+    text-align: center;
+    line-height: 2em;
+    background-color:#cfcfcf;
+}
+
+/* For mobile devices less than 480px */
+@media (max-width: 480px) {
+    /* Not displaying  logo video and active tab */
+    .logoLink {
+        display: none;
+    }
+    video {  
+        display: none;
+    }
+    .activetab{
+        display: none;
+    }
+    .menu-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .menu-wrap .toggler {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Hamburger line*/
+    .menu-wrap .hamburger>section {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(41, 39, 39);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    /*Top and bottom line*/
+    .menu-wrap .hamburger>section:before, .menu-wrap .hamburger>section:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        background-color: #333;
+    }
+    /*Moves line down */
+    .menu-wrap .hamburger>section:after {
+        top: 10px;
+    }
+    /* Toggler animation */
+    .menu-wrap .toggler:checked+.hamburger>section {
+        transform: rotate(135deg);
+        background-color: rgb(238, 168, 168);
+        
+    }
+    /* Ham burger bar converted to  red close button  */
+    .menu-wrap .toggler:checked+.hamburger>section:before, .menu-wrap .toggler:checked+.hamburger>section:after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color: rgb(238, 168, 168);
+    }
+    /* Revealing area  in Ham burger menu*/
+    .menu-wrap .toggler:checked~.menu {
+        visibility: visible;
+    }
+    /*when toggler is checked */
+    .menu-wrap .toggler:checked~.menu>section {
+        transform: translateX(+0%);
+        transition-duration: 0.4s;
+    }
+    .menu-wrap .toggler:checked~.menu>section>section {
+        opacity: 1;
+        transition: opacity 0.4s;
+    }
+     /*when toggler is checked navigation is shown */
+    .menu-wrap .menu {
+        line-height: 3em;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+    }
+    .menu-wrap .menu>section {
+        background-color: rgba(26, 22, 22, 0.95);
+        border: #333 solid 1px;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        display: flex;
+        flex: none;
+        transform: translateX(-100%);
+        transition: all 0.4s;
+    }
+    .menu-wrap .menu>section>section {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        transition: opacity 0.4s ease;
+    }
+    .menu-wrap .menu>section>section>ul {
+        margin-top: 3em;
+    }
+    .menu-wrap .menu>section>section>ul>li {
+        list-style: none;
+        color: rgb(228, 220, 220);
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: right;
+        border-bottom: #333 0.5px solid;
+    }
+    .menu-wrap .menu>section>section>ul>li>a {
+        color: inherit;
+        text-decoration: none;
+    }
+     /*home page for mobile version */
+    .flex {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .flex-child{
+        order:1;
+    }
+        /*home page's Aside for mobile version */
+    .asideIndex {
+        margin-top: -2px;
+        order: 3;
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 1em;
+    }
+    .asideIndex li {
+        padding: 0;
+        margin-left: 1em;
+        margin-top: 1em;
+        
+    }
+    .article>.text {
+        width: 100%;
+    }
+    .article .picture {
+        width: 50%;
+        margin: 0 25%;
+    }
+    /*Best destinations page */
+    #article1 {
+        grid-column: 1/ span 2;
+        grid-row: 10/ span 3;
+    }
+    #article2 {
+        grid-column: 1/ span 2;
+        grid-row: 7/ span 3;
+    }
+    #article3 {
+        grid-column: 1/ span 2;
+        grid-row: 4/ span 3;
+    }
+    #article4 {
+        display: none;
+    }
+    #article5 {
+        grid-column: 1/ span 2;
+        grid-row: 1/ span 3;
+    }
+    #article6 {
+        display: none;
+    }
+    /*Best destinations page's aside for mobile */
+    .asideGroup>strong {
+        padding: 0.5em;
+    }
+     h1 {
+        grid-row: 13;
+        grid-column: 1/ span 2;
+        text-align: center;
+    }
+    .asideGroup a {
+        padding: 1em;
+    }
+    .asideGroup .img {
+       
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+    }
+    .product1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: unset;
+        text-align: end;
+        grid-column: 1/ span 2;
+        grid-row: 14/ span 1;
+    }
+    .product2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: unset;
+        text-align: end;
+        grid-column: 1/ span 2;
+        grid-row: 15;
+    }
+    .product3 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: unset;
+        text-align: end;
+        grid-column: 1/ span 2;
+        grid-row: 16;
+    }
+
+    figcaption{
+        margin-left: 0.25em;
+    }
+        /*Tickets page for mobile */
+    .tableSection{
+        margin: 0 auto;
+        grid-column: 1/ span 2;
+        grid-row: 1/ span 5;
+    }
+
+    .tableSection em{
+        grid-column: 1/ span 2;
+        grid-row: 6
+    }
+     /*Ticket page's aside for mobile */
+    .aside{
+        margin-top: 1em;
+        grid-column: 1/ span 2;
+        grid-row: 7/ span 4;
+    }
+
+    .aside img{
+        width: 50%;
+    }
+     /*Contact page for mobile */
+    section form input[type="text"], section form input[type="email"] {
+        width: 95%;
+        height: 2.5em;
+        margin: 0 1em 0.75em;
+        padding: 0 0 0 3%;
+    }
+
+    #contactForm button{
+        width: 90%;
+        padding: 1em;
+        border-radius: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #cookie {
+             
+     width: 20%;
+  
+    }
+    .footer {
+        padding-right: 5em;
+        padding-left: 1em;
+    }
+
+    aside img {
+        width: 100%;
+    }
+}
+ /*Tablet version */
+@media (min-width: 481px) and (max-width: 1279px) {
+    /*ham burger menu hidden for tablet */
+    header>.checkbox, .toggler, .hamburger {
+        display: none;
+    }
+    
+    #main-header a {
+        list-style: none;
+        text-decoration: none;
+       
+        font-weight: bold;
+    }
+    #main-header ul {
+        margin: 0;
+        padding: 0;
+    }
+    #main-header li {
+        float: left;
+        display: inline;
+        padding: 0 30px 0 30px;
+    }
+    .menu {
+        align-items: center;
+    }
+    .menu ul {
+        list-style: none;
+    }
+    .menu ul li {
+        
+        font-size: 110%;
+    }
+    .flex {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    video {
+        order: 2;
+        width: 70%;
+        margin-left:150px;
+    }
+    .asideIndex {
+        margin-top: -2px;
+        order: 3;
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 1em;
+    }
+    .asideIndex li {
+        padding: 0;
+        margin-left: 1em;
+        margin-top: 1em;
+        
+    }
+    #article1 {
+        grid-column: 1;
+        grid-row: 1/ span 2;
+    }
+    #article2 {
+        grid-column: 2;
+        grid-row: 1/ span 3;
+    }
+    #article3 {
+        grid-column: 1;
+        grid-row: 3/ span 4;
+    }
+    #article4 {
+        display: none;
+    }
+    #article5 {
+        grid-column: 2;
+        grid-row: 4/ span 3;
+    }
+    #article6 {
+        grid-column: 1/ span 2;
+        grid-row: 7/ span 2;
+    }
+    .asideGroup {
+        display: grid;
+        background-color: #333;
+        border: #333 solid 2px;
+    }
+    .asideGroup a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1em;
+    }
+    .asideGroup .img {
+        margin-bottom: 1em;
+        width: 300px;
+        height:250px;
+    }
+    .product1{
+        margin-right:150px;
+    }
+    .product3 {
+        display: none;
+    }
+    #maintable{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ticketart{
+        grid-column: 1/ span 2;
+        grid-row: 1;
+    }
+
+    .tableSection{
+        grid-column: 1/ span 2;
+        grid-row: 2/ span 6;
+        margin-bottom: 1em;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    #asidefortablet{
+        display: flex;
+    }
+
+    .product1ticket{
+        display: none;
+    }
+
+    .aside{
+        grid-column: 1/ span 2;
+        grid-row: 8/ span 2;
+        margin: 1em 0 1em 0;
+    }
+    section form {
+        width: 50%;
+        margin-left: 1em;
+    }
+
+    #contactForm h2{
+        padding: 0.25em;
+        grid-column: 1/ span 2;
+        grid-row: 1;
+    }
+
+    .contactMain{
+        display: grid;
+        margin: 0 1em 0 1em;
+    }
+
+    #contactForm{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2/ span 7;
+        margin-top: 50px;
+    }
+
+    .contactMain .aside{
+        margin-left: 5em;
+        width: 50%;
+        grid-column: 2;
+        grid-row: 2/ span 7;
+    }
+    .contactMain .product1ticket{
+        display: block;
+    }
+
+    .contactMain .aside img{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    section form input[type="text"], section form input[type="email"] {
+        width: 95%;
+        height: 2.5em;
+        margin: 0 1em 0.75em;
+        padding: 0 0 0 3%;
+        border-radius: 0.3em;
+    }
+    
+    section form button {
+        margin: 1em 1.8em;
+        float: right;
+        width: 50%;
+        padding: 1em;
+        border-radius: 0;
+    }
+    
+    form legend{
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+    
+    #message{
+        height: 10em;
+        margin: 1em;
+    } 
+    
+}
+
+    
+ /*Things that i want to display in pc only*/
+@media (min-width: 1280px) {
+    /* ham burger Menu */
+    header>.checkbox, .toggler, .hamburger {
+        display: none;
+    }
+   
+    #main-header a {
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #main-header ul {
+        margin: 0;
+        padding: 0;
+    }
+    #main-header li {
+        float: left;
+        display: inline;
+        padding: 0 30px 0 30px;
+        
+    }
+    .menu {
+        align-items: center;
+         width: 100%;
+    }
+  
+    .menu ul li {
+        text-decoration: none;
+    }
+    .menu ul li:hover {
+        color:#FF5349;
+    }
+    
+    video {
+        width: 90%;
+       
+        margin-left: 50px;
+    }
+    .flex {
+        margin-left: 20px;
+    }
+   
+    .article>.text {
+        width: 80%;
+        float: left;
+    }
+    .article .picture, .article footer {
+        width: 20%;
+        float: right;
+    }
+    .asideIndex {
+        order: 0;
+        margin: 0;
+        flex-basis: 20%;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+    .asideIndex li {
+        margin-left: 1em;
+        margin-top: 1em;
+        padding: 0;
+    }
+    /*Best destination page*/
+    .asideGroup .img{
+        width:300px;
+        height:150px;
+    }
+     /*Tickets page */
+    #maintable{
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        background-color: rgb(117, 117, 207);
+    }
+    .table{
+        width:100%;
+    }
+
+    .ticketarticle{
+        grid-column: 1/ span 3;
+        grid-row: 1;
+    }
+
+    .tableSection{
+        display: block;
+        grid-column: 1/ span 2;
+        grid-row: 2/ span 6;
+    }
+    .aside{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column: 3;
+        grid-row: 1/ span 6;
+        margin-left: 250px;
+        margin-right: 150px;
+    }
+
+    .aside .images{
+        width:70%;
+    }
+    .table {
+        margin-left:50px;
+    }
+    #copyrighttable{
+        margin-left:50px; 
+    }
+     /*Contact Page */
+    #contactForm h2{
+        padding: 0.25em;
+        grid-column: 1/ span 3;
+        grid-row: 1;
+    }
+
+    .contactMain{
+        display: grid;
+        margin: 0 1em 0 1em;
+    }
+
+    #contactForm{
+        margin-right: 1em;
+        grid-column: 1/ span 2;
+        grid-row: 2/ span 6;
+    }
+
+    .contactMain aside{
+        width: fit-content;
+        grid-column: 3;
+        grid-row: 2/ span 6;
+    }
+
+    section form input[type="text"], section form input[type="email"] {
+        width: 95%;
+        height: 2.5em;
+        margin: 0 1em 0.75em;
+        padding: 0 0 0 3%;
+        border-radius: 0.3em;
+    }
+    
+    section form button {
+        margin: 1em 1.8em;
+        float: right;
+        width: 50%;
+        background: rgb(48, 197, 78);
+        color: #fff;
+        border: 0;
+        border-radius: 0.3em;
+        font-size: 1.17em;
+        cursor: pointer;
+        padding: 1em;
+        transition: all .3s;
+    }
+    
+    form legend{
+        background-color: rgb(141, 196, 255);
+        width: 100%;
+        padding: 0.25em;
+        border: #333 solid 1px;
+    }
+    
+    
+}
