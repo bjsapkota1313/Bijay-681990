@@ -1,0 +1,90 @@
+#heading1{
+    background-color:red;
+    text-align:center;
+}
+#heading2{
+    background-color:red;
+    text-align:center;  
+}
+#navigation{
+    background-color:rgb(0, 17, 255);
+    text-align:center;
+   display: inline;
+    float:left;
+    padding-top: 20px;
+}
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 27px;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover{
+    color:orangered;
+}
+.editing{
+    display: inline;
+}
+#form{
+    float:left;
+    width:60%;
+}
+#aside{
+    float:right;
+    display: inline;
+    width:40%; 
+}     
+img{
+    width: 200px;
+    height: 200px;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(7, 11, 209, 0.5);
+}
+#contactinfo{
+    float: center;
+    display: inline;
+    text-align: center;
+    margin:10px 10px 10px 10px;
+}
+*label{
+    align-items: left;
+   
+}
+#submit{
+    background-color: blue;
+    color:white;
+    align-content:center;
+}
+#name{
+    background-color: rgb(177, 168, 169);
+}
+#message{
+    width:200px;
+    height: 100px;
+}
+#cookies{
+    background-color: #fa0;
+    opacity: 50%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    z-index: 9999;
+}

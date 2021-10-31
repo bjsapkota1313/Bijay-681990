@@ -1,0 +1,59 @@
+
+head
+{
+  background-color: black;
+}
+
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.usingflex{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+ 
+}
+#article1{
+  background-color: rgb(255, 203, 136); 
+
+ 
+  flex-basis: 100%;
+  
+  
+}
+#article2{
+  background-color: rgb(28, 28, 167);
+  
+ 
+   
+  
+  flex-basis: 100%;
+  
+}
+#article3{
+  background-color: rgb(90, 204, 62);
+  flex-basis: 100%;
+  
+}
+.img    {  
+  width: 200px;
+   height: 200px;
+   float: right;
+   clear:both;
+   
+}
+#aside{
+ 
+  
+    align-items: flex-end;
+    flex-basis: 100%;
+}
